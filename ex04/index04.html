@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="en>
+	<head>
+		<title> user registration form <title>
+	</head>
+	<body>
+		<form>
+			<lable for = "name"> Full_Name </lable>  <br>
+			<input type = "text" id ="name" name = "name" required minlength ="3"> <br>
+
+			<lable for = "user-email" > Email </lable> <br>
+			<input type = "email" id ="user_email" name ="email" required > <br>
+
+			<lable for ="password"> Password </lable> <br>
+			<input type ="password" id ="password" name ="password" required minlength ="8" > <br>
+			
+			<br>
+
+			<input type = "radio" id ="student" name ="role" value ="student" required >
+			<lable for ="student"> Student </lable><br>
+			<input type = "radio" id "teacher" name ="role" value ="techer" required >
+			<lable for ="teacher"> Teacher </lable><br>
+			
+			<br>
+
+			<lable for ="country"> Country </lable><br>
+			<select id ="country" name = "country" required >
+				<option value = "" > Select country </option>
+				<option value = "JO" selected > Jordan </option>
+				<option value = "PL" > Palestine </option> 
+  				<option value = "EG" > Egypt </option>
+
+			</select><br>
+			
+			<hr>
+	
+			<lable for ="bio"> BIO </lable><br>
+			<textarea id ="bio" name ="bio" required minlength ="10" ></textarea> <br>
+			
+			<hr>	
+
+			<input type ="checkbox" id ="agree" name "agree" required >	
+			<lable for ="agree"> Agree to the terms and conditions </lable>
+ 
+			<br>			
+
+			<button typy ="submit"> Submit </button><br>	
+
+		</form>
+	</body>
+</html>
